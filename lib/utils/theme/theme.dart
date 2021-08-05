@@ -39,25 +39,29 @@ ThemeData basicTheme() {
   final ThemeData base = ThemeData.light();
 
   return base.copyWith(
-    textTheme: _basicTextTheme(base.textTheme),
-    primaryColor: Color(0xFF1E311D),
-    indicatorColor: Color(0xFF807A6B),
-    scaffoldBackgroundColor: green02,
-    accentColor: yellow01,
-    buttonColor: Color(0xFF387A36),
-    backgroundColor: Colors.red,
-    iconTheme: IconThemeData(
-      color: Colors.white,
-      size: 20.0,
-    ),
-    floatingActionButtonTheme: base.floatingActionButtonTheme.copyWith(
-      backgroundColor: green03,
-      foregroundColor: yellow01,
-      hoverColor: green04,
-    ),
-    tabBarTheme: base.tabBarTheme.copyWith(
-      labelColor: green01,
-      unselectedLabelColor: green06,
-    ),
-  );
+      textTheme: _basicTextTheme(base.textTheme),
+      primaryColor: Color(0xFF1E311D),
+      indicatorColor: Color(0xFF807A6B),
+      scaffoldBackgroundColor: green02,
+      accentColor: yellow01,
+      buttonColor: Color(0xFF387A36),
+      backgroundColor: Colors.red,
+      iconTheme: IconThemeData(
+        color: Colors.white,
+        size: 20.0,
+      ),
+      floatingActionButtonTheme: base.floatingActionButtonTheme.copyWith(
+        backgroundColor: green03,
+        foregroundColor: yellow01,
+        hoverColor: green04,
+      ),
+      tabBarTheme: base.tabBarTheme.copyWith(
+        labelColor: green01,
+        unselectedLabelColor: green06,
+      ),
+      bottomNavigationBarTheme: base.bottomNavigationBarTheme.copyWith(
+        backgroundColor: green02,
+        unselectedItemColor: green06,
+        selectedItemColor: yellow01,
+      ));
 }

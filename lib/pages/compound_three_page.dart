@@ -5,8 +5,10 @@ class CompoundThreePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.green,
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Composta de 3"),
+      ),
     );
   }
 }
